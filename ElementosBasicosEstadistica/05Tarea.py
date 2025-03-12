@@ -5,28 +5,28 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('ElementosBasicosEstadistica/housing.csv')
 
 # media de la columna median_house_value
-mediavalor = df["median_house_value"].mean()
-print('La media de median_house_value es:', mediavalor)
+media= df["median_house_value"].mean()
+print('La media de median_house_value es:', media)
 
 # Mediana 
-medianavalor = df["median_house_value"].median()
-print('La mediana es:', medianavalor)
+mediana = df["median_house_value"].median()
+print('La mediana es:', mediana)
 
 # Moda 
-modavalor = df["median_house_value"].mode()[0]
-print('La moda  es:', modavalor)
+moda = df["median_house_value"].mode()[0]
+print('La moda  es:', moda)
 
 # Rango 
-rangovalor = df["median_house_value"].max() - df["median_house_value"].min()
-print('El rango  es:', rangovalor)
+rango = df["median_house_value"].max() - df["median_house_value"].min()
+print('El rango  es:', rango)
 
 # Varianza 
-varianzavalor = df["median_house_value"].var()
-print('La varianza es:', varianzavalor)
+varianza = df["median_house_value"].var()
+print('La varianza es:', varianza)
 
 # Desviación estándar 
-desviacionvalor = df["median_house_value"].std()
-print('La desviación estándar es:', desviacionvalor)
+desviacion = df["median_house_value"].std()
+print('La desviación estándar es:', desviacion)
 
 # Tabla de frecuencias de solo las primeras 10 filas
 tabla_frecuencia = df["median_house_value"].value_counts().head(10)

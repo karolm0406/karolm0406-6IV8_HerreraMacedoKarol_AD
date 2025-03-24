@@ -36,8 +36,8 @@ plt.hist(data3, bins=30, color='blue', density=True, label='Desviación Estandar
 plt.title('Comparación de Distribuciones Normales con una semilla en random')
 plt.xlabel('Valor')
 plt.ylabel('Densidad')
-plt.axhline(0, color='black' linewidth=0.5, ls='--')
-plt.axvline(0, color='black' linewidth=0.5, ls='--')
+plt.axhline(0, color='black', linewidth=0.5, ls='--')
+plt.axvline(0, color='black', linewidth=0.5, ls='--')
 plt.grid()
 
 plt.show()

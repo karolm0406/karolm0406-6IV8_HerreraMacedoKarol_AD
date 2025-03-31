@@ -8,7 +8,7 @@ df = pd.read_csv('ElementosBasicosEstadistica/Datos_Con_Sucursal.csv')
 # 1. Conocer las ventas totales del comercio
 ventas_tot = df["ventas_tot"].sum()
 print('La suma de las ventas totales es:', ventas_tot)
-
+   
 # 2. Conocer cuantos socios tienen adeudo y cuantos no tienen adeudo con su porcentaje correspondiente
 tot_adeudo = df[df["adeudo_actual"] > 0].shape[0]
 tot_no_adeudo = df[df["adeudo_actual"] == 0].shape[0]

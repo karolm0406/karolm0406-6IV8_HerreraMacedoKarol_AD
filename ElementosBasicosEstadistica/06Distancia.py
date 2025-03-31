@@ -30,9 +30,9 @@ for i in df_tiendas.index:
         #distancias
         distancias_eu.loc[i,j]=distance.euclidean(df_tiendas.loc[i], df_tiendas.loc[j])
         #diatncia Manhatan
-        distancias_mh.loc[i,j]=distance.euclidean(df_tiendas.loc[i], df_tiendas.loc[j])
+        distancias_mh.loc[i,j]=distance.cityblock(df_tiendas.loc[i], df_tiendas.loc[j])
         #diatncia Chebysehv
-        distancias_ch.loc[i,j]=distance.euclidean(df_tiendas.loc[i], df_tiendas.loc[j])
+        distancias_ch.loc[i,j]=distance.chebyshev(df_tiendas.loc[i], df_tiendas.loc[j])
         
 #Mostrar los resultados
 print('\nDistancias Euclidianas entre las tiendas:')

@@ -34,7 +34,7 @@ plt.figure(figsize=(10, 5))
 plt.plot(std_pagos.index, std_pagos.values, marker='o', linestyle='-', color='red')
 plt.xlabel("Fecha")
 plt.ylabel("Desviación Estándar de Pagos")
-plt.title("Desviación Estándar de Pagos respecto al Tiempo")
+plt.title("Desviación Estándar de Pagos respecto al Tiempo")                
 plt.xticks(rotation=45)
 plt.show()
 
